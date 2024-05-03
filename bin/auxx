@@ -1,0 +1,30 @@
+public void insert(int info, NodeB atual){
+    if (isEmpty()) {
+        this.root = new NodeB(this.order);
+        this.root.preencherRaiz(info, null, null);
+        
+
+    }else{
+        
+        int  pos = atual.binarySearch(info);
+        if (atual.getKeys( pos ) == info) {
+            System.out.println("Valor ja existente");
+            
+        }else{
+            if (atual.getFilhos(0) == null) {// é folha?
+                atual.insertKeys(info, null);// inseri
+                if (atual.getN() == order ) {
+                    // cisão
+                }
+            }  else{
+                // vai pro proximo nó
+                if (info < atual.getKeys(pos)) {
+                    atual = atual.getFilhos(pos);
+                }else{
+                    atual = atual.getFilhos(pos + 1);
+                }
+                insert(info, atual);
+            }  
+        }
+    }
+}
