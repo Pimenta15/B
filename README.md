@@ -1,6 +1,6 @@
 # Árvore B em Java
 
-Implementação de uma **árvore B** de ordem configurável em Java, feita para a disciplina de **Estruturas de Dados II**. O programa tem um menu no terminal para inserir chaves e percorrer a árvore.
+Implementação de uma **árvore B** de ordem configurável em Java, feita para a disciplina de **Estruturas de Dados**. O programa tem um menu no terminal para inserir chaves e percorrer a árvore.
 
 ![Menu do programa](docs/menu.png)
 
